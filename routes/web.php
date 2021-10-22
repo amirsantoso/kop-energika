@@ -13,7 +13,7 @@
 
 
 Auth::routes();
-Route::get('/kop-energika', function () {
+Route::get('/', function () {
     return redirect()->route('login');
 });
 Route::group(['middleware' => 'web'], function () {
